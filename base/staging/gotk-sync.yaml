@@ -21,7 +21,6 @@ metadata:
 spec:
   path: ./base/staging
   interval: 10m
-  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
