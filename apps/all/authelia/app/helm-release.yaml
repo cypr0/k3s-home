@@ -77,7 +77,7 @@ spec:
         - policy: one_factor
           domain:
           - grafana.${SECRET_DOMAIN}
-          # - rancher.${SECRET_DOMAIN}
+          - rancher.${SECRET_DOMAIN}
         # Applications without auth but low security requirements
         - policy: one_factor
           domain:
@@ -111,7 +111,7 @@ spec:
           enabledSecret: true
           host: mail.${SECRET_DOMAIN}
           port: 465
-          username: ${SMTP_USERNAME}
+          username: "${SMTP_USERNAME}"
           sender: authelia@${SECRET_DOMAIN}
     secret:
       existingSecret: authelia
