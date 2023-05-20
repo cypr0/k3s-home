@@ -6,7 +6,6 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  prune: true
   ref:
     branch: main
   url: ssh://git@github.com/cypr0/k3s-home
@@ -21,6 +20,7 @@ metadata:
 spec:
   path: ./base/staging
   interval: 10m
+  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system

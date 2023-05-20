@@ -8,6 +8,7 @@ spec:
   path: ./configs/staging
   targetNamespace: flux-system
   interval: 10m
+  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
