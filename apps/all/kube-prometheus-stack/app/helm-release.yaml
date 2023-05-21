@@ -57,9 +57,9 @@ spec:
         - name: 'null'
         - name: 'discord'
           slack_configs:
-          - channel: '#cluster'
+          - channel: '#prometheus'
             icon_url: https://avatars3.githubusercontent.com/u/3380462
-            username: 'Prometheus'
+            username: 'prometheus'
             send_resolved: true
             # https://github.com/onedr0p/home-cluster/blob/main/cluster/apps/monitoring/kube-prometheus-stack/helm-release.yaml#L33
             title: |-
