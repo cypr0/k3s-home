@@ -26,8 +26,8 @@ spec:
       ingressClassName: nginx
       annotations:
         external-dns/is-public: "true"
-        #nginx.ingress.kubernetes.io/auth-url: http://authelia.networking.svc.cluster.local/api/verify
-        #nginx.ingress.kubernetes.io/auth-signin: https://auth.${SECRET_DOMAIN}
+        nginx.ingress.kubernetes.io/auth-url: http://authelia.networking.svc.cluster.local/api/verify
+        nginx.ingress.kubernetes.io/auth-signin: https://auth.${SECRET_DOMAIN}
       host: longhorn.${SECRET_DOMAIN}
     defaultSettings:
       storageOverProvisioningPercentage: 100
