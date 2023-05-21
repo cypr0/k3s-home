@@ -12,7 +12,7 @@ spec:
   dependsOn:
     - name: ingress-nginx-app
     - name: longhorn-app
-    - name: kube-prometheus-stack-app
+    #- name: kube-prometheus-stack-app
   sourceRef:
     kind: GitRepository
     name: flux-system
