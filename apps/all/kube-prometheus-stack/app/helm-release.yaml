@@ -51,13 +51,12 @@ spec:
           - "alert-manager.${SECRET_DOMAIN}"
       config:
         global:
-          slack_api_url: "${SECRET_ALERT_MANAGER_DISCORD_WEBHOOK}"
           resolve_timeout: 5m
         receivers:
         - name: 'null'
         - name: 'discord'
           discord_configs:
-          - webhook_url: "${SECRET_ALERT_MANAGER_DISCORD_WEBHOOK}"
+          - webhook_url: ${SECRET_ALERT_MANAGER_DISCORD_WEBHOOK}
         route:
           group_by: ['alertname', 'job']
           group_wait: 30s
