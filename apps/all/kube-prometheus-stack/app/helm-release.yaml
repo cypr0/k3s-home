@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: kube-prometheus-stack
-      version: 45.27.1
+      version: 45.29
       sourceRef:
         kind: HelmRepository
         name: prometheus-charts
@@ -87,7 +87,7 @@ spec:
       enabled: true
       image:
         repository: grafana/grafana
-        tag: 9.5.1
+        tag: 9.5.2
       admin:
         existingSecret: grafana-secrets
       dashboardProviders:
@@ -163,7 +163,7 @@ spec:
       image:
         registry: quay.io
         repository: prometheus/prometheus
-        tag: v2.43.1
+        tag: v2.44.0
       ingress:
         enabled: true
         pathType: Prefix
