@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: authelia-postgresql-data
+  name: authelia-postgresql-datastore
 spec:
   storageClassName: longhorn-backup
   accessModes:

@@ -22,7 +22,7 @@ spec:
     primary:
       persistence:
         enabled: true
-        existingClaim: authelia-postgresql-data
+        existingClaim: authelia-postgresql-datastore
     metrics:
       enabled: true
       serviceMonitor:
