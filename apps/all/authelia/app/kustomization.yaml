@@ -4,7 +4,7 @@ resources:
 - helm-release.yaml
 - authelia-secrets.sops.yaml
 - authelia-users-secrets.sops.yaml
-- authelia-postgresql-pvc.yaml
+#- authelia-postgresql-pvc.yaml
 - postgresql-helm-release.yaml
 - authelia-redis-pvc.yaml
 - redis-helm-release.yaml
