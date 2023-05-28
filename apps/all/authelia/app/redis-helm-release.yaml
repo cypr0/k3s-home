@@ -1,29 +1,29 @@
+---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-    name: authelia-redis
+  name: authelia-redis
 spec:
-    interval: 5m
-    chart:
-        spec:
-            chart: redis
-            version: 17.11.3
-            sourceRef:
-                kind: HelmRepository
-                name: bitnami-charts
-                namespace: flux-system
-            interval: 5m
-    values:
-        architecture: standalone
-        master:
-            persistence:
-                enabled: true
-                existingClaim: authelia-redis-datastore
-        metrics:
-            enabled: true
-            serviceMonitor:
-                enabled: true
-        auth:
-            existingSecret: authelia
-            existingSecretPasswordKey: REDIS_PASSWORD
-            
+  interval: 5m
+  chart:
+    spec:
+      chart: redis
+      version: 17.11.3
+      sourceRef:
+        kind: HelmRepository
+        name: bitnami-charts
+        namespace: flux-system
+      interval: 5m
+  values:
+    architecture: standalone
+    master:
+      persistence:
+        enabled: true
+        existingClaim: authelia-redis-datastore
+    metrics:
+      enabled: true
+      serviceMonitor:
+        enabled: true
+    auth:
+      existingSecret: authelia
+      existingSecretPasswordKey: REDIS_PASSWORD
