@@ -20,7 +20,7 @@ resources:
 #- ../all/paperless-ngx
 #- ../all/pod-gateway-vpn
 # ../all/promtail
-- ../all/rancher
+#- ../all/rancher
 # - ../all/system-upgrade-controller
 #- ../all/weave-gitops
 
