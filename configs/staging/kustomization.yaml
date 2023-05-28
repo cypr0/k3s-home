@@ -5,4 +5,3 @@ resources:
 - ../shared-secrets.sops.yaml
 - ../shared-settings.yaml
 - cluster-secrets.sops.yaml
-- cluster-settings.yaml
