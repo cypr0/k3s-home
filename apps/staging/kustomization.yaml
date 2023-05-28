@@ -13,6 +13,7 @@ resources:
 - ../all/ingress-nginx
 #- ../all/jd2
 - ../all/kube-prometheus-stack
+- ../all/kube-vip
 #- ../all/kured
 #- ../all/loki
 - ../all/longhorn
