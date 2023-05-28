@@ -26,7 +26,6 @@ spec:
         default: true
       service:
         type: LoadBalancer
-        loadBalancerIP: "${LB_IP_NGINX_INGRESS}"
         externalTrafficPolicy: Local
       config:
         ssl-protocols: "TLSv1.3 TLSv1.2"
