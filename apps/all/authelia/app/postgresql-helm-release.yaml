@@ -26,23 +26,3 @@ spec:
             enabled: true
             serviceMonitor:
                 enabled: true
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age:
-        - recipient: age140ydupaur7u5frpf2229zz73xwfg6ndpuwn27lna425y8t44ucfs07ahf6
-          enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaTGppOEhJc0loUW1rYjU4
-            Yk1nZlhZcC9hMTBDMm1GazJPSElTQjJHZEdNCllwSThoYmFTNmpaNDU5dkZnVkZ3
-            bkdrK2JSWjBlOW9TWlJhUXRTc3dIMGMKLS0tIDZMaXExcDBzUEZCVVEvQXg1a0k2
-            U2cwcGxDNFgrczVzUW9PZVBXM0VMZFkK/+tNnbF8VZrtFsle2HeMG1C2FyfK9eol
-            SZfGBevSPtSlJgEn950uZpX6s+MrfcFJFzaBYcF4yYBIsPbB7hjQPQ==
-            -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-05-27T19:43:22Z"
-    mac: ENC[AES256_GCM,data:nRK++jG1JEHnK59xJQispLDB7M6cvoOA8JwDWSzzoGh5ZVFkGo/ATaaP+//KsM3+A6nf0B0bVWCX5aLZXZmMQQwgJjoLKIF+p+vzFPZFisxWtqXP7j26rm9xh9kcIzFkee4ReZv9c78CvnXkEIAdw/3kQptRPSK2qtzOqyPcgE8=,iv:gJRdPwnwsv5wrPGan5Cjnvs5VBpGjyDGKN0xOulCMqk=,tag:ajte+oW6+sD7yGQmnpAJPw==,type:str]
-    pgp: []
-    encrypted_regex: ^(data|stringData)$
-    version: 3.7.3

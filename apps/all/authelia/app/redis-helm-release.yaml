@@ -26,23 +26,3 @@ spec:
         auth:
             existingSecret: authelia
             existingSecretPasswordKey: REDIS_PASSWORD
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age:
-        - recipient: age140ydupaur7u5frpf2229zz73xwfg6ndpuwn27lna425y8t44ucfs07ahf6
-          enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWVUE5Sk8zQ2hmcFY0SnEz
-            NHN5QWZNbVd1WWdPNGg2a25ZYTl6OWZZOEdvCjBLU0lzU0pYYXZ6Wm1xNUdZQUVG
-            YlpZQkJ2K0NiZGJCbVhlUEc1S2h3VVEKLS0tIE8zVnJlS3Rqa0dJN1JHTi9OOWQv
-            aFoxV1NtendRbVU4SE40eG1abGRKNUkK6khUBji8EKcNgc1UZKet0Z/GHrPypmw1
-            shy+KJ0HcRANAesjfWCj2SVGerhKfTfc4lQg87kKDWyMEZeNVPrNzg==
-            -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-05-27T19:43:42Z"
-    mac: ENC[AES256_GCM,data:kGKWe8n6hZ0jauZyfOlF5JSNDGBDrIOhplEfEImYBRJiry5AfAhN9kPQyghaVa7cZE0QMGSHQcBPizJIZ9KEXNypDvtBA9l2/FaU8nRuZR0Q84hbAlC491uSBpN7CopT5FX7iDkIZJDBbnve81DUg3P7pcYwQTBzrQ/NWBWFdcs=,iv:fZ1tHa7wVpG4EAWfx54dhLNxY9TiVaQCGH8kZRWFb2A=,tag:8K7WfY1/Z2w4g9jw5aLcVw==,type:str]
-    pgp: []
-    encrypted_regex: ^(data|stringData)$
-    version: 3.7.3
